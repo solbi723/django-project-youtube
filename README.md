@@ -9,9 +9,9 @@ Docker는 애플리케이션의 배포와 실행을 컨테이너라는 가상화
 1. Docker Engine
 Docker를 구동하는 핵심 소프트웨어로, 다음과 같은 부분으로 구성됩니다:
 
-- Docker Daemon: 컨테이너 관리 및 실행 담당.
-- Docker CLI (Command Line Interface): Docker 명령어를 실행하는 도구.
-- REST API: Docker와 상호작용하기 위한 인터페이스.
+ - Docker Daemon: 컨테이너 관리 및 실행 담당.
+ - Docker CLI (Command Line Interface): Docker 명령어를 실행하는 도구.
+ - REST API: Docker와 상호작용하기 위한 인터페이스.
 2. Docker Hub
 컨테이너 이미지의 저장소로, 이미지 검색, 공유, 배포 가능.
 
