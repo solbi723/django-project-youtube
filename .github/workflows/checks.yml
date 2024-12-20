@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-20.04 # 작업 환경
     steps: # 작업 단계
       # 도커 연결 작업
+      - name: Install Docker Compose
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
+
       - name: Login in to Docker Hub
         uses: docker/login-action@v1 # 다른 Docker 레지스트리에 로그인하기 위해 사용하는 GitHub Action
         with:
@@ -24,3 +29,4 @@ jobs:
         
       - name: Lint # pep8 파이썬 코드 스타일 가이드 준수 여부 검사
         run: docker-compose run --rm app sh -c "flake8"
+
